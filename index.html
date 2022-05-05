@@ -497,16 +497,30 @@
           </svg>
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form>
-          <input type="text" class="modal-input" name="user-name" required />
-          <input type="tel" class="modal-input" name="user-tel" required />
-          <input type="email" class="modal-input" name="user-email" />
-          <input
-            type="text"
-            class="modal-input-comment"
-            name="user-comment"
-            placeholder="Введите текст"
-          />
+        <form class="modal-form">
+          <label class="modal-label"
+            ><span class="modal-label-name">Имя</span>
+            <input type="text" class="modal-input" name="user-name" required
+          /></label>
+          <label class="modal-label"
+            ><span class="modal-label-name">Телефон</span>
+            <input type="tel" class="modal-input" name="user-tel" required
+          /></label>
+
+          <label class="modal-label"
+            ><span class="modal-label-name">Почта</span>
+            <input type="email" class="modal-input" name="user-email" />
+          </label>
+
+          <label class="modal-label"
+            ><span class="modal-label-name">Комментарий</span>
+            <input
+              type="text"
+              class="modal-input-comment"
+              name="user-comment"
+              placeholder="Введите текст"
+            />
+          </label>
           <button type="submit">Отправить</button>
         </form>
       </div>
